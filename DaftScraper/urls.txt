@@ -1,0 +1,35 @@
+--Counties--
+http://www.daft.ie/ajax_endpoint.php?action=map_county_counts&type=sale&extra_params=%7B%22price%22%3A%5B0%2C50000000%5D%2C%22beds%22%3A%5B0%2C20%5D%7D
+
+http://www.daft.ie/ajax_endpoint.php?action=map_nearby_properties&type=rental&sw=(50.25491959641281%2C+-6.46148082548053)&ne=(50.39795025991505%2C+-6.1393568020430305)
+
+--Cities--
+http://www.daft.ie/ajax_endpoint.php?action=map_area_counts&type=sale&sw=(51.483895526513436%2C+-12.843984375)&ne=(55.42547764867898%2C+-3.156015625)&extra_params=%7B%22price%22%3A%5B0%2C50000000%5D%2C%22beds%22%3A%5B0%2C20%5D%7D
+
+--Within cities--
+http://www.daft.ie/ajax_endpoint.php?action=map_nearby_properties&type=sale&sw=(53.21403564497616%2C+-6.571344023437527)&ne=(53.479977662240046%2C+-5.947095976562528)&extra_params=%7B%22price%22%3A%5B0%2C50000000%5D%2C%22beds%22%3A%5B0%2C20%5D%7D
+
+--within cities/Rental--
+http://www.daft.ie/ajax_endpoint.php?action=map_nearby_properties&type=rental&sw=(53.25491959641281%2C+-6.46148082548053)&ne=(53.39795025991505%2C+-6.1393568020430305)&extra_params=%7B%22rent%22%3A%5B0%2C50000000%5D%2C%22beds%22%3A%5B0%2C20%5D%7D
+
+--email advertiser--POST
+http://www.daft.ie/ajax_endpoint.php?action=daft_contact_advertiser&from=1&email=1%402.ie&message=1&contact_number=1&type=rental&id=1429695&self_copy=
+
+Request URL:http://www.daft.ie/ajax_endpoint.php?action=map_nearby_properties&type=rental&sw=(53.21403564497616%2C+-6.571344023437527)&ne=(53.479977662240046%2C+-5.947095976562528)&extra_params=%7B%22price%22%3A%5B0%2C50000000%5D%2C%22beds%22%3A%5B0%2C20%5D%7D
+
+
+--myhome--
+http://www.myhome.ie/api/v3/search?apikey=6DD47F82-7F59-4F24-80D2-D405DA232802&PropertyClassIDs=3|4&PageSize=500&IncrementPropertyCounts=false&NELat=54.107722628012446&NELng=-4.976806640625&SWLat=52.736291655910925&SWLng=-12.886962890625&mapOptimised=true&callback=jsonp1396135711515&_=1396135711921
+
+--myhome, mobile--
+89.185.144.170/api/v3/search?apiKey=59141e6c-dc5d-40b7-94b9-a5392d67f9cc&PropertyClassIDs=3&Page=2&PageSize=20&SortColumn=RefreshedDate&SortDirection=desc
+
+89.185.144.170/api/v3/search?apiKey=59141e6c-dc5d-40b7-94b9-a5392d67f9cc&PropertyClassIDs=3&Page=3&PageSize=20&SortColumn=RefreshedDate&SortDirection=desc
+
+89.185.144.170/api/v3/search?apiKey=59141e6c-dc5d-40b7-94b9-a5392d67f9cc&PropertyClassIDs=3&Page=4&PageSize=20&SortColumn=RefreshedDate&SortDirection=desc
+
+89.185.144.170/api/v3/search?apiKey=59141e6c-dc5d-40b7-94b9-a5392d67f9cc&PropertyClassIDs=1%7C2%7C3%7C4%7C6%7C5%7C9%7C10&PropertyStatusIDs=2%7C11%7C12&Page=1&PageSize=100&SortColumn=RefreshedDate&SortDirection=desc&NELat=53.50291669425109&NELng=-6.057716924697161&SWLat=53.284217753674504&SWLng=-6.29139868542552
+
+89.185.144.170/api/v3/search?apiKey=59141e6c-dc5d-40b7-94b9-a5392d67f9cc&PropertyClassIDs=3&Page=3&PageSize=20&SortColumn=RefreshedDate&SortDirection=desc
+
+http://89.185.144.170/api/v3/search?apiKey=59141e6c-dc5d-40b7-94b9-a5392d67f9cc&PropertyClassIDs=3&Page=1&PageSize=10&SortColumn=RefreshedDate&SortDirection=desc

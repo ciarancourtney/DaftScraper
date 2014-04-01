@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - DaftDB@localhost" uuid="21eb5187-e5fe-41a9-aa83-d4fd7d15d36c">
+    <database-info product="MySQL" version="5.5.34-log" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="DaftDB"/>
+    <table name="Apartment" schema="" catalog="DaftDB" type="TABLE">
+      <column name="Apartment_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Address" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_1" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_2" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_3" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_4" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="County" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Beds" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Baths" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Price" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Apartment_Id"/>
+    </table>
+    <table name="Flat" schema="" catalog="DaftDB" type="TABLE">
+      <column name="Flat_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Address" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_1" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_2" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_3" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_4" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="County" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Beds" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Baths" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Price" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Flat_Id"/>
+    </table>
+    <table name="House" schema="" catalog="DaftDB" type="TABLE">
+      <column name="House_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Address" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_1" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_2" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_3" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_4" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="County" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Beds" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Baths" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Price" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="House_Id"/>
+    </table>
+    <table name="Rentals" schema="" catalog="DaftDB" type="TABLE">
+      <column name="Rental_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Area" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Collection" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="County" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Listing_id" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Lat" sqlType="MEDIUMTEXT" length="16777215" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="Longitude" sqlType="MEDIUMTEXT" length="16777215" precision="0" nullable="true" jdbcType="-1"/>
+      <column name="Link" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Photo_url" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Street" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Rent" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Summary" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Rental_Id"/>
+      <index name="Listing_id" unique="true" columns="Listing_id"/>
+    </table>
+    <table name="Studio" schema="" catalog="DaftDB" type="TABLE">
+      <column name="Studio_Id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Address" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_1" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_2" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_3" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Address_4" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="County" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="Beds" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Baths" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="Price" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Studio_Id"/>
+    </table>
+    <table name="schema_migrations" schema="" catalog="DaftDB" type="TABLE">
+      <column name="version" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <index name="unique_schema_migrations" unique="true" columns="version"/>
+    </table>
+  </data-source>
+</component>

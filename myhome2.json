@@ -1,0 +1,1077 @@
+[
+    {
+        "LocalityID": 4250,
+        "Name": "Abbey Street",
+        "NameAndRegion": "Abbey Street, Dublin 1"
+    },
+    {
+        "LocalityID": 1418,
+        "Name": "Abbotstown",
+        "NameAndRegion": "Abbotstown, Dublin 15"
+    },
+    {
+        "LocalityID": 1419,
+        "Name": "Adamstown",
+        "NameAndRegion": "Adamstown, Co. Dublin"
+    },
+    {
+        "LocalityID": 4251,
+        "Name": "Amiens Street",
+        "NameAndRegion": "Amiens Street, Dublin 1"
+    },
+    {
+        "LocalityID": 1247,
+        "Name": "Arbour Hill",
+        "NameAndRegion": "Arbour Hill, Dublin 7"
+    },
+    {
+        "LocalityID": 1248,
+        "Name": "Artane",
+        "NameAndRegion": "Artane, Dublin 5"
+    },
+    {
+        "LocalityID": 1339,
+        "Name": "Ashtown",
+        "NameAndRegion": "Ashtown, Dublin 15"
+    },
+    {
+        "LocalityID": 1342,
+        "Name": "Ayrfield",
+        "NameAndRegion": "Ayrfield, Dublin 13"
+    },
+    {
+        "LocalityID": 4486,
+        "Name": "Baggot Street",
+        "NameAndRegion": "Baggot Street, Dublin 2"
+    },
+    {
+        "LocalityID": 1249,
+        "Name": "Balbriggan",
+        "NameAndRegion": "Balbriggan, Co. Dublin"
+    },
+    {
+        "LocalityID": 1250,
+        "Name": "Baldonnel",
+        "NameAndRegion": "Baldonnel, Dublin 22"
+    },
+    {
+        "LocalityID": 1255,
+        "Name": "Baldoyle",
+        "NameAndRegion": "Baldoyle, Dublin 13"
+    },
+    {
+        "LocalityID": 1421,
+        "Name": "Balgaddy",
+        "NameAndRegion": "Balgaddy, Co. Dublin"
+    },
+    {
+        "LocalityID": 1251,
+        "Name": "Balgriffin",
+        "NameAndRegion": "Balgriffin, Dublin 13"
+    },
+    {
+        "LocalityID": 1263,
+        "Name": "Ballinteer",
+        "NameAndRegion": "Ballinteer, Dublin 16"
+    },
+    {
+        "LocalityID": 1253,
+        "Name": "Ballsbridge",
+        "NameAndRegion": "Ballsbridge, Dublin 4"
+    },
+    {
+        "LocalityID": 1394,
+        "Name": "Ballyboden",
+        "NameAndRegion": "Ballyboden, Dublin 16"
+    },
+    {
+        "LocalityID": 1343,
+        "Name": "Ballybough",
+        "NameAndRegion": "Ballybough, Dublin 3"
+    },
+    {
+        "LocalityID": 1252,
+        "Name": "Ballyboughal",
+        "NameAndRegion": "Ballyboughal, Co. Dublin"
+    },
+    {
+        "LocalityID": 1254,
+        "Name": "Ballybrack",
+        "NameAndRegion": "Ballybrack, Dublin South"
+    },
+    {
+        "LocalityID": 1424,
+        "Name": "Ballycoolin",
+        "NameAndRegion": "Ballycoolin, Dublin 24"
+    },
+    {
+        "LocalityID": 1425,
+        "Name": "Ballycullen",
+        "NameAndRegion": "Ballycullen, Dublin 24"
+    },
+    {
+        "LocalityID": 1257,
+        "Name": "Ballyfermot",
+        "NameAndRegion": "Ballyfermot, Dublin 10"
+    },
+    {
+        "LocalityID": 1423,
+        "Name": "Ballymount",
+        "NameAndRegion": "Ballymount, Dublin 12"
+    },
+    {
+        "LocalityID": 1264,
+        "Name": "Ballymun",
+        "NameAndRegion": "Ballymun, Dublin 11"
+    },
+    {
+        "LocalityID": 1262,
+        "Name": "Balrothery",
+        "NameAndRegion": "Balrothery, Co. Dublin"
+    },
+    {
+        "LocalityID": 4517,
+        "Name": "Balscadden",
+        "NameAndRegion": "Balscadden, Dublin North"
+    },
+    {
+        "LocalityID": 1366,
+        "Name": "Bayside",
+        "NameAndRegion": "Bayside, Dublin 13"
+    },
+    {
+        "LocalityID": 1256,
+        "Name": "Beaumont",
+        "NameAndRegion": "Beaumont, Dublin 9"
+    },
+    {
+        "LocalityID": 1367,
+        "Name": "Beaupark",
+        "NameAndRegion": "Beaupark, Dublin 13"
+    },
+    {
+        "LocalityID": 1344,
+        "Name": "Blackhorse Ave",
+        "NameAndRegion": "Blackhorse Ave, Dublin 7"
+    },
+    {
+        "LocalityID": 1396,
+        "Name": "Blackpits",
+        "NameAndRegion": "Blackpits, Dublin 8"
+    },
+    {
+        "LocalityID": 1258,
+        "Name": "Blackrock",
+        "NameAndRegion": "Blackrock, Co. Dublin"
+    },
+    {
+        "LocalityID": 1259,
+        "Name": "Blanchardstown",
+        "NameAndRegion": "Blanchardstown, Dublin 15"
+    },
+    {
+        "LocalityID": 1422,
+        "Name": "Bluebell",
+        "NameAndRegion": "Bluebell, Dublin 12"
+    },
+    {
+        "LocalityID": 1395,
+        "Name": "Bohernabreena",
+        "NameAndRegion": "Bohernabreena, Dublin 24"
+    },
+    {
+        "LocalityID": 1260,
+        "Name": "Booterstown",
+        "NameAndRegion": "Booterstown, Co. Dublin"
+    },
+    {
+        "LocalityID": 1397,
+        "Name": "Brennanstown Road",
+        "NameAndRegion": "Brennanstown Road, Dublin 18"
+    },
+    {
+        "LocalityID": 1261,
+        "Name": "Brittas",
+        "NameAndRegion": "Brittas, Co. Dublin"
+    },
+    {
+        "LocalityID": 1345,
+        "Name": "Broadstone",
+        "NameAndRegion": "Broadstone, Dublin 7"
+    },
+    {
+        "LocalityID": 1266,
+        "Name": "Cabinteely",
+        "NameAndRegion": "Cabinteely, Dublin 18"
+    },
+    {
+        "LocalityID": 1267,
+        "Name": "Cabra",
+        "NameAndRegion": "Cabra, Dublin 7"
+    },
+    {
+        "LocalityID": 4252,
+        "Name": "Capel Street",
+        "NameAndRegion": "Capel Street, Dublin 1"
+    },
+    {
+        "LocalityID": 1346,
+        "Name": "Cappagh Road",
+        "NameAndRegion": "Cappagh Road, Dublin 11"
+    },
+    {
+        "LocalityID": 1269,
+        "Name": "Carpenterstown",
+        "NameAndRegion": "Carpenterstown, Dublin 15"
+    },
+    {
+        "LocalityID": 1268,
+        "Name": "Carrickmines",
+        "NameAndRegion": "Carrickmines, Dublin 18"
+    },
+    {
+        "LocalityID": 1270,
+        "Name": "Castleknock",
+        "NameAndRegion": "Castleknock, Dublin 15"
+    },
+    {
+        "LocalityID": 1271,
+        "Name": "Chapelizod",
+        "NameAndRegion": "Chapelizod, Dublin 20"
+    },
+    {
+        "LocalityID": 1426,
+        "Name": "Cherry Orchard",
+        "NameAndRegion": "Cherry Orchard, Dublin 10"
+    },
+    {
+        "LocalityID": 1398,
+        "Name": "Christchurch",
+        "NameAndRegion": "Christchurch, Dublin 8"
+    },
+    {
+        "LocalityID": 1272,
+        "Name": "Churchtown",
+        "NameAndRegion": "Churchtown, Dublin 14"
+    },
+    {
+        "LocalityID": 1427,
+        "Name": "Citywest",
+        "NameAndRegion": "Citywest, Dublin 24"
+    },
+    {
+        "LocalityID": 1348,
+        "Name": "Clarehall",
+        "NameAndRegion": "Clarehall, Dublin 13"
+    },
+    {
+        "LocalityID": 1273,
+        "Name": "Cloghran",
+        "NameAndRegion": "Cloghran, Co. Dublin"
+    },
+    {
+        "LocalityID": 1274,
+        "Name": "Clondalkin",
+        "NameAndRegion": "Clondalkin, Dublin 22"
+    },
+    {
+        "LocalityID": 1275,
+        "Name": "Clonee",
+        "NameAndRegion": "Clonee, Dublin 15"
+    },
+    {
+        "LocalityID": 1276,
+        "Name": "Clongriffin",
+        "NameAndRegion": "Clongriffin, Dublin 13"
+    },
+    {
+        "LocalityID": 1349,
+        "Name": "Clonliffe",
+        "NameAndRegion": "Clonliffe, Dublin 3"
+    },
+    {
+        "LocalityID": 1278,
+        "Name": "Clonshaugh",
+        "NameAndRegion": "Clonshaugh, Dublin 17"
+    },
+    {
+        "LocalityID": 1277,
+        "Name": "Clonsilla",
+        "NameAndRegion": "Clonsilla, Dublin 15"
+    },
+    {
+        "LocalityID": 1279,
+        "Name": "Clonskeagh",
+        "NameAndRegion": "Clonskeagh, Dublin 14"
+    },
+    {
+        "LocalityID": 1280,
+        "Name": "Clontarf",
+        "NameAndRegion": "Clontarf, Dublin 3"
+    },
+    {
+        "LocalityID": 4587,
+        "Name": "Coolmine",
+        "NameAndRegion": "Coolmine, Dublin 15"
+    },
+    {
+        "LocalityID": 1281,
+        "Name": "Coolock",
+        "NameAndRegion": "Coolock, Dublin 5"
+    },
+    {
+        "LocalityID": 1428,
+        "Name": "Corduff",
+        "NameAndRegion": "Corduff, Dublin 15"
+    },
+    {
+        "LocalityID": 1283,
+        "Name": "Crumlin",
+        "NameAndRegion": "Crumlin, Dublin 12"
+    },
+    {
+        "LocalityID": 1284,
+        "Name": "Dalkey",
+        "NameAndRegion": "Dalkey, Co. Dublin"
+    },
+    {
+        "LocalityID": 1429,
+        "Name": "Damastown",
+        "NameAndRegion": "Damastown, Dublin 15"
+    },
+    {
+        "LocalityID": 4265,
+        "Name": "Dame Street",
+        "NameAndRegion": "Dame Street, Dublin 2"
+    },
+    {
+        "LocalityID": 1350,
+        "Name": "Darndale",
+        "NameAndRegion": "Darndale, Dublin 17"
+    },
+    {
+        "LocalityID": 1285,
+        "Name": "Dartry",
+        "NameAndRegion": "Dartry, Dublin 6"
+    },
+    {
+        "LocalityID": 1287,
+        "Name": "Deansgrange",
+        "NameAndRegion": "Deansgrange, Co. Dublin"
+    },
+    {
+        "LocalityID": 1351,
+        "Name": "Docklands",
+        "NameAndRegion": "Docklands, Dublin 1"
+    },
+    {
+        "LocalityID": 1288,
+        "Name": "Dollymount",
+        "NameAndRegion": "Dollymount, Dublin 3"
+    },
+    {
+        "LocalityID": 1289,
+        "Name": "Dolphins Barn",
+        "NameAndRegion": "Dolphins Barn, Dublin 8"
+    },
+    {
+        "LocalityID": 1290,
+        "Name": "Donabate",
+        "NameAndRegion": "Donabate, Co. Dublin"
+    },
+    {
+        "LocalityID": 1291,
+        "Name": "Donaghmede",
+        "NameAndRegion": "Donaghmede, Dublin 13"
+    },
+    {
+        "LocalityID": 1292,
+        "Name": "Donnybrook",
+        "NameAndRegion": "Donnybrook, Dublin 4"
+    },
+    {
+        "LocalityID": 1286,
+        "Name": "Donnycarney",
+        "NameAndRegion": "Donnycarney, Dublin 5"
+    },
+    {
+        "LocalityID": 4253,
+        "Name": "Dorset Street",
+        "NameAndRegion": "Dorset Street, Dublin 1"
+    },
+    {
+        "LocalityID": 1293,
+        "Name": "Drimnagh",
+        "NameAndRegion": "Drimnagh, Dublin 12"
+    },
+    {
+        "LocalityID": 1295,
+        "Name": "Drumcondra",
+        "NameAndRegion": "Drumcondra, Dublin 3"
+    },
+    {
+        "LocalityID": 1296,
+        "Name": "Dun Laoghaire",
+        "NameAndRegion": "Dun Laoghaire, Co. Dublin"
+    },
+    {
+        "LocalityID": 1294,
+        "Name": "Dundrum",
+        "NameAndRegion": "Dundrum, Dublin 14"
+    },
+    {
+        "LocalityID": 1297,
+        "Name": "East Wall",
+        "NameAndRegion": "East Wall, Dublin 3"
+    },
+    {
+        "LocalityID": 1368,
+        "Name": "Edenmore",
+        "NameAndRegion": "Edenmore, Dublin 5"
+    },
+    {
+        "LocalityID": 1369,
+        "Name": "Elmount",
+        "NameAndRegion": "Elmount, Dublin 9"
+    },
+    {
+        "LocalityID": 1298,
+        "Name": "Fairview",
+        "NameAndRegion": "Fairview, Dublin 3"
+    },
+    {
+        "LocalityID": 1299,
+        "Name": "Finglas",
+        "NameAndRegion": "Finglas, Dublin 11"
+    },
+    {
+        "LocalityID": 1300,
+        "Name": "Firhouse",
+        "NameAndRegion": "Firhouse, Dublin 24"
+    },
+    {
+        "LocalityID": 1301,
+        "Name": "Foxrock",
+        "NameAndRegion": "Foxrock, Dublin 18"
+    },
+    {
+        "LocalityID": 1302,
+        "Name": "Garristown",
+        "NameAndRegion": "Garristown, Co. Dublin"
+    },
+    {
+        "LocalityID": 1303,
+        "Name": "Glasnevin",
+        "NameAndRegion": "Glasnevin, Dublin 9"
+    },
+    {
+        "LocalityID": 1353,
+        "Name": "Glasnevin Nth",
+        "NameAndRegion": "Glasnevin Nth, Dublin 9"
+    },
+    {
+        "LocalityID": 1304,
+        "Name": "Glasthule",
+        "NameAndRegion": "Glasthule, Co. Dublin"
+    },
+    {
+        "LocalityID": 1305,
+        "Name": "Glenageary",
+        "NameAndRegion": "Glenageary, Co. Dublin"
+    },
+    {
+        "LocalityID": 1306,
+        "Name": "Glenasmole",
+        "NameAndRegion": "Glenasmole, Dublin 24"
+    },
+    {
+        "LocalityID": 1307,
+        "Name": "Glencullen",
+        "NameAndRegion": "Glencullen, Dublin 18"
+    },
+    {
+        "LocalityID": 1308,
+        "Name": "Goatstown",
+        "NameAndRegion": "Goatstown, Dublin 14"
+    },
+    {
+        "LocalityID": 1309,
+        "Name": "Gormanstown",
+        "NameAndRegion": "Gormanstown, Co. Meath"
+    },
+    {
+        "LocalityID": 4264,
+        "Name": "Grafton Street",
+        "NameAndRegion": "Grafton Street, Dublin 2"
+    },
+    {
+        "LocalityID": 1401,
+        "Name": "Grand Canal Dk",
+        "NameAndRegion": "Grand Canal Dk, Dublin 2"
+    },
+    {
+        "LocalityID": 1310,
+        "Name": "Greenhills",
+        "NameAndRegion": "Greenhills, Dublin 12"
+    },
+    {
+        "LocalityID": 1354,
+        "Name": "Griffith Ave",
+        "NameAndRegion": "Griffith Ave, Dublin 9"
+    },
+    {
+        "LocalityID": 1311,
+        "Name": "Harold's Cross",
+        "NameAndRegion": "Harold's Cross, Dublin 6"
+    },
+    {
+        "LocalityID": 1431,
+        "Name": "Hartstown",
+        "NameAndRegion": "Hartstown, Dublin 15"
+    },
+    {
+        "LocalityID": 4254,
+        "Name": "Henry Street",
+        "NameAndRegion": "Henry Street, Dublin 1"
+    },
+    {
+        "LocalityID": 1433,
+        "Name": "Hollystown",
+        "NameAndRegion": "Hollystown, Dublin 15"
+    },
+    {
+        "LocalityID": 1312,
+        "Name": "Howth",
+        "NameAndRegion": "Howth, Co. Dublin"
+    },
+    {
+        "LocalityID": 1355,
+        "Name": "IFSC",
+        "NameAndRegion": "IFSC, Dublin 1"
+    },
+    {
+        "LocalityID": 1314,
+        "Name": "Inchicore",
+        "NameAndRegion": "Inchicore, Dublin 8"
+    },
+    {
+        "LocalityID": 1315,
+        "Name": "Irishtown",
+        "NameAndRegion": "Irishtown, Dublin 4"
+    },
+    {
+        "LocalityID": 1313,
+        "Name": "Islandbridge",
+        "NameAndRegion": "Islandbridge, Dublin 8"
+    },
+    {
+        "LocalityID": 1316,
+        "Name": "Kilbarrack",
+        "NameAndRegion": "Kilbarrack, Dublin 5"
+    },
+    {
+        "LocalityID": 1318,
+        "Name": "Killester",
+        "NameAndRegion": "Killester, Dublin 5"
+    },
+    {
+        "LocalityID": 1317,
+        "Name": "Killiney",
+        "NameAndRegion": "Killiney, Co. Dublin"
+    },
+    {
+        "LocalityID": 1320,
+        "Name": "Kilmacud",
+        "NameAndRegion": "Kilmacud, Dublin 14"
+    },
+    {
+        "LocalityID": 1319,
+        "Name": "Kilmainham",
+        "NameAndRegion": "Kilmainham, Dublin 8"
+    },
+    {
+        "LocalityID": 1356,
+        "Name": "Kilmore",
+        "NameAndRegion": "Kilmore, Dublin 5"
+    },
+    {
+        "LocalityID": 1321,
+        "Name": "Kilternan",
+        "NameAndRegion": "Kilternan, Co. Dublin"
+    },
+    {
+        "LocalityID": 1322,
+        "Name": "Kiltipper",
+        "NameAndRegion": "Kiltipper, Dublin West"
+    },
+    {
+        "LocalityID": 1323,
+        "Name": "Kimmage",
+        "NameAndRegion": "Kimmage, Dublin 6W"
+    },
+    {
+        "LocalityID": 1435,
+        "Name": "Kingswood",
+        "NameAndRegion": "Kingswood, Dublin 24"
+    },
+    {
+        "LocalityID": 1324,
+        "Name": "Kinsealy",
+        "NameAndRegion": "Kinsealy, Co. Dublin"
+    },
+    {
+        "LocalityID": 1325,
+        "Name": "Knocklyon",
+        "NameAndRegion": "Knocklyon, Dublin 16"
+    },
+    {
+        "LocalityID": 1326,
+        "Name": "Kylemore Road",
+        "NameAndRegion": "Kylemore Road, Dublin 12"
+    },
+    {
+        "LocalityID": 4266,
+        "Name": "Leeson Street",
+        "NameAndRegion": "Leeson Street, Dublin 2"
+    },
+    {
+        "LocalityID": 1327,
+        "Name": "Leopardstown",
+        "NameAndRegion": "Leopardstown, Dublin 18"
+    },
+    {
+        "LocalityID": 1328,
+        "Name": "Longmile road",
+        "NameAndRegion": "Longmile road, Dublin 12"
+    },
+    {
+        "LocalityID": 1329,
+        "Name": "Loughlinstown",
+        "NameAndRegion": "Loughlinstown, Dublin 18"
+    },
+    {
+        "LocalityID": 1357,
+        "Name": "Loughshinny",
+        "NameAndRegion": "Loughshinny, Co. Dublin"
+    },
+    {
+        "LocalityID": 1330,
+        "Name": "Lucan",
+        "NameAndRegion": "Lucan, Co. Dublin"
+    },
+    {
+        "LocalityID": 1331,
+        "Name": "Lusk",
+        "NameAndRegion": "Lusk, Co. Dublin"
+    },
+    {
+        "LocalityID": 1332,
+        "Name": "Malahide",
+        "NameAndRegion": "Malahide, Co. Dublin"
+    },
+    {
+        "LocalityID": 1333,
+        "Name": "Marino",
+        "NameAndRegion": "Marino, Dublin 3"
+    },
+    {
+        "LocalityID": 4257,
+        "Name": "Marlborough Street",
+        "NameAndRegion": "Marlborough Street, Dublin 1"
+    },
+    {
+        "LocalityID": 4255,
+        "Name": "Mary Street",
+        "NameAndRegion": "Mary Street, Dublin 1"
+    },
+    {
+        "LocalityID": 1334,
+        "Name": "Meakstown",
+        "NameAndRegion": "Meakstown, Dublin North"
+    },
+    {
+        "LocalityID": 4592,
+        "Name": "Merrion",
+        "NameAndRegion": "Merrion, Dublin 4"
+    },
+    {
+        "LocalityID": 4262,
+        "Name": "Merrion Square",
+        "NameAndRegion": "Merrion Square, Dublin 2"
+    },
+    {
+        "LocalityID": 1335,
+        "Name": "Milltown",
+        "NameAndRegion": "Milltown, Dublin 6"
+    },
+    {
+        "LocalityID": 1336,
+        "Name": "Monkstown",
+        "NameAndRegion": "Monkstown, Co. Dublin"
+    },
+    {
+        "LocalityID": 4256,
+        "Name": "Mountjoy Square",
+        "NameAndRegion": "Mountjoy Square, Dublin 1"
+    },
+    {
+        "LocalityID": 1337,
+        "Name": "Mt. Merrion",
+        "NameAndRegion": "Mt. Merrion, Co. Dublin"
+    },
+    {
+        "LocalityID": 1338,
+        "Name": "Mulhuddart",
+        "NameAndRegion": "Mulhuddart, Dublin 15"
+    },
+    {
+        "LocalityID": 1358,
+        "Name": "Naas Road",
+        "NameAndRegion": "Naas Road, Dublin 12"
+    },
+    {
+        "LocalityID": 1437,
+        "Name": "Nangor Road",
+        "NameAndRegion": "Nangor Road, Dublin 22"
+    },
+    {
+        "LocalityID": 1340,
+        "Name": "Naul",
+        "NameAndRegion": "Naul, Co. Dublin"
+    },
+    {
+        "LocalityID": 1341,
+        "Name": "Navan Road",
+        "NameAndRegion": "Navan Road, Dublin 7"
+    },
+    {
+        "LocalityID": 1352,
+        "Name": "Newcastle",
+        "NameAndRegion": "Newcastle, Co. Dublin"
+    },
+    {
+        "LocalityID": 1436,
+        "Name": "Newlandscross",
+        "NameAndRegion": "Newlandscross, Dublin 22"
+    },
+    {
+        "LocalityID": 1347,
+        "Name": "North Circular Road",
+        "NameAndRegion": "North Circular Road, Dublin 7"
+    },
+    {
+        "LocalityID": 1245,
+        "Name": "North City Centre",
+        "NameAndRegion": "North City Centre, Dublin 1"
+    },
+    {
+        "LocalityID": 1360,
+        "Name": "North Strand",
+        "NameAndRegion": "North Strand, Dublin 3"
+    },
+    {
+        "LocalityID": 4258,
+        "Name": "North Wall",
+        "NameAndRegion": "North Wall, Dublin 1"
+    },
+    {
+        "LocalityID": 1359,
+        "Name": "Northern Cross",
+        "NameAndRegion": "Northern Cross, Dublin 13"
+    },
+    {
+        "LocalityID": 1361,
+        "Name": "Northwest Business Park",
+        "NameAndRegion": "Northwest Business Park, Dublin 15"
+    },
+    {
+        "LocalityID": 4259,
+        "Name": "O'Connell Street",
+        "NameAndRegion": "O'Connell Street, Dublin 1"
+    },
+    {
+        "LocalityID": 1370,
+        "Name": "Oldtown",
+        "NameAndRegion": "Oldtown, Co. Dublin"
+    },
+    {
+        "LocalityID": 1438,
+        "Name": "Ongar",
+        "NameAndRegion": "Ongar, Dublin 15"
+    },
+    {
+        "LocalityID": 1371,
+        "Name": "Palmerstown",
+        "NameAndRegion": "Palmerstown, Dublin 20"
+    },
+    {
+        "LocalityID": 1439,
+        "Name": "Park West",
+        "NameAndRegion": "Park West, Dublin 12"
+    },
+    {
+        "LocalityID": 4260,
+        "Name": "Parnell Square",
+        "NameAndRegion": "Parnell Square, Dublin 1"
+    },
+    {
+        "LocalityID": 1372,
+        "Name": "Perrystown",
+        "NameAndRegion": "Perrystown, Dublin 12"
+    },
+    {
+        "LocalityID": 1373,
+        "Name": "Phibsboro",
+        "NameAndRegion": "Phibsboro, Dublin 7"
+    },
+    {
+        "LocalityID": 1362,
+        "Name": "Poppintree",
+        "NameAndRegion": "Poppintree, Dublin 11"
+    },
+    {
+        "LocalityID": 1404,
+        "Name": "Porterstown",
+        "NameAndRegion": "Porterstown, Dublin 15"
+    },
+    {
+        "LocalityID": 1375,
+        "Name": "Portmarnock",
+        "NameAndRegion": "Portmarnock, Co. Dublin"
+    },
+    {
+        "LocalityID": 1374,
+        "Name": "Portobello",
+        "NameAndRegion": "Portobello, Dublin 8"
+    },
+    {
+        "LocalityID": 1376,
+        "Name": "Portrane",
+        "NameAndRegion": "Portrane, Co. Dublin"
+    },
+    {
+        "LocalityID": 1377,
+        "Name": "Raheny",
+        "NameAndRegion": "Raheny, Dublin 5"
+    },
+    {
+        "LocalityID": 1378,
+        "Name": "Ranelagh",
+        "NameAndRegion": "Ranelagh, Dublin 6"
+    },
+    {
+        "LocalityID": 1379,
+        "Name": "Rathcoole",
+        "NameAndRegion": "Rathcoole, Co. Dublin"
+    },
+    {
+        "LocalityID": 1380,
+        "Name": "Rathfarnham",
+        "NameAndRegion": "Rathfarnham, Dublin 14"
+    },
+    {
+        "LocalityID": 1381,
+        "Name": "Rathgar",
+        "NameAndRegion": "Rathgar, Dublin 6"
+    },
+    {
+        "LocalityID": 1384,
+        "Name": "Rathmichael",
+        "NameAndRegion": "Rathmichael, Dublin 18"
+    },
+    {
+        "LocalityID": 1385,
+        "Name": "Rathmines",
+        "NameAndRegion": "Rathmines, Dublin 6"
+    },
+    {
+        "LocalityID": 1440,
+        "Name": "Red Cow Roundabout",
+        "NameAndRegion": "Red Cow Roundabout, Dublin 22"
+    },
+    {
+        "LocalityID": 1382,
+        "Name": "Rialto",
+        "NameAndRegion": "Rialto, Dublin 8"
+    },
+    {
+        "LocalityID": 1383,
+        "Name": "Ringsend",
+        "NameAndRegion": "Ringsend, Dublin 4"
+    },
+    {
+        "LocalityID": 1386,
+        "Name": "Rolestown",
+        "NameAndRegion": "Rolestown, Co. Dublin"
+    },
+    {
+        "LocalityID": 1387,
+        "Name": "Roseville",
+        "NameAndRegion": "Roseville, Co. Dublin"
+    },
+    {
+        "LocalityID": 1388,
+        "Name": "Rush",
+        "NameAndRegion": "Rush, Co. Dublin"
+    },
+    {
+        "LocalityID": 1389,
+        "Name": "Saggart",
+        "NameAndRegion": "Saggart, Co. Dublin"
+    },
+    {
+        "LocalityID": 1390,
+        "Name": "Sallynoggin",
+        "NameAndRegion": "Sallynoggin, Co. Dublin"
+    },
+    {
+        "LocalityID": 1391,
+        "Name": "Sandycove",
+        "NameAndRegion": "Sandycove, Co. Dublin"
+    },
+    {
+        "LocalityID": 1400,
+        "Name": "Sandyford",
+        "NameAndRegion": "Sandyford, Dublin 18"
+    },
+    {
+        "LocalityID": 1392,
+        "Name": "Sandymount",
+        "NameAndRegion": "Sandymount, Dublin 4"
+    },
+    {
+        "LocalityID": 1393,
+        "Name": "Santry",
+        "NameAndRegion": "Santry, Dublin 9"
+    },
+    {
+        "LocalityID": 1402,
+        "Name": "Shankill",
+        "NameAndRegion": "Shankill, Dublin 18"
+    },
+    {
+        "LocalityID": 1403,
+        "Name": "Skerries",
+        "NameAndRegion": "Skerries, Co. Dublin"
+    },
+    {
+        "LocalityID": 1363,
+        "Name": "Smithfield",
+        "NameAndRegion": "Smithfield, Dublin 7"
+    },
+    {
+        "LocalityID": 1399,
+        "Name": "South Circular Road",
+        "NameAndRegion": "South Circular Road, Dublin 8"
+    },
+    {
+        "LocalityID": 1246,
+        "Name": "South City Centre",
+        "NameAndRegion": "South City Centre, Dublin 2"
+    },
+    {
+        "LocalityID": 4298,
+        "Name": "South City Centre - D8",
+        "NameAndRegion": "South City Centre - D8, Dublin 8"
+    },
+    {
+        "LocalityID": 1364,
+        "Name": "St Margarets",
+        "NameAndRegion": "St Margarets, Co. Dublin"
+    },
+    {
+        "LocalityID": 1405,
+        "Name": "Stepaside",
+        "NameAndRegion": "Stepaside, Dublin 18"
+    },
+    {
+        "LocalityID": 1407,
+        "Name": "Stillorgan",
+        "NameAndRegion": "Stillorgan, Co. Dublin"
+    },
+    {
+        "LocalityID": 1408,
+        "Name": "Stoneybatter",
+        "NameAndRegion": "Stoneybatter, Dublin 7"
+    },
+    {
+        "LocalityID": 1409,
+        "Name": "Strawberry Beds",
+        "NameAndRegion": "Strawberry Beds, Dublin 20"
+    },
+    {
+        "LocalityID": 1410,
+        "Name": "Sutton",
+        "NameAndRegion": "Sutton, Dublin 13"
+    },
+    {
+        "LocalityID": 1411,
+        "Name": "Swords",
+        "NameAndRegion": "Swords, Co. Dublin"
+    },
+    {
+        "LocalityID": 4261,
+        "Name": "Talbot Street",
+        "NameAndRegion": "Talbot Street, Dublin 1"
+    },
+    {
+        "LocalityID": 1412,
+        "Name": "Tallaght",
+        "NameAndRegion": "Tallaght, Dublin 24"
+    },
+    {
+        "LocalityID": 1413,
+        "Name": "Temple Bar",
+        "NameAndRegion": "Temple Bar, Dublin 2"
+    },
+    {
+        "LocalityID": 1414,
+        "Name": "Templeogue",
+        "NameAndRegion": "Templeogue, Dublin 6W"
+    },
+    {
+        "LocalityID": 1415,
+        "Name": "Terenure",
+        "NameAndRegion": "Terenure, Dublin 6"
+    },
+    {
+        "LocalityID": 1282,
+        "Name": "The Coombe",
+        "NameAndRegion": "The Coombe, Dublin 8"
+    },
+    {
+        "LocalityID": 2770,
+        "Name": "The Ward",
+        "NameAndRegion": "The Ward, Co. Meath"
+    },
+    {
+        "LocalityID": 1416,
+        "Name": "Ticknock",
+        "NameAndRegion": "Ticknock, Dublin 18"
+    },
+    {
+        "LocalityID": 1417,
+        "Name": "Tyrrelstown",
+        "NameAndRegion": "Tyrrelstown, Dublin 15"
+    },
+    {
+        "LocalityID": 1420,
+        "Name": "Walkinstown",
+        "NameAndRegion": "Walkinstown, Dublin 12"
+    },
+    {
+        "LocalityID": 4267,
+        "Name": "Wexford Street",
+        "NameAndRegion": "Wexford Street, Dublin 2"
+    },
+    {
+        "LocalityID": 1432,
+        "Name": "Whitehall",
+        "NameAndRegion": "Whitehall, Dublin 9"
+    },
+    {
+        "LocalityID": 1434,
+        "Name": "Windy Arbour",
+        "NameAndRegion": "Windy Arbour, Dublin 14"
+    }
+]
