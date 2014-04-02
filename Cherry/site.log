@@ -1984,3 +1984,113 @@ TypeError: dump() takes at least 2 arguments (1 given)
 [02/Apr/2014:04:22:52] ENGINE Bus EXITING
 [02/Apr/2014:04:22:52] ENGINE Bus EXITED
 [02/Apr/2014:04:22:52] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:15:41:02] ENGINE Bus STARTING
+[02/Apr/2014:15:41:02] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:15:41:02] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:15:41:02] ENGINE Bus STARTED
+[02/Apr/2014:15:44:13] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 34, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 47, in compute_nearest_neighbour
+    distance = normalise(property1, property2)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 60, in normalise
+    weight1 * (float(property1['lat']) - float(property2['lat'])) ** 2 +
+TypeError: float() argument must be a string or a number
+
+[02/Apr/2014:15:46:53] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:15:46:53] ENGINE Bus STOPPING
+[02/Apr/2014:15:46:53] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:15:46:53] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:15:46:53] ENGINE Bus STOPPED
+[02/Apr/2014:15:46:53] ENGINE Bus EXITING
+[02/Apr/2014:15:46:53] ENGINE Bus EXITED
+[02/Apr/2014:15:46:53] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:15:46:55] ENGINE Bus STARTING
+[02/Apr/2014:15:46:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:15:46:56] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:15:46:56] ENGINE Bus STARTED
+[02/Apr/2014:16:19:40] ENGINE Bus STARTING
+[02/Apr/2014:16:19:40] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:19:40] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:19:40] ENGINE Bus STARTED
+[02/Apr/2014:16:31:38] ENGINE Bus STARTING
+[02/Apr/2014:16:31:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:31:38] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:31:38] ENGINE Bus STARTED
+[02/Apr/2014:16:32:03] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 34, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 52, in compute_nearest_neighbour
+    euc_distances.sort(distance)
+TypeError: 'float' object is not callable
+
+[02/Apr/2014:16:34:39] ENGINE Bus STARTING
+[02/Apr/2014:16:34:39] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:34:39] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:34:39] ENGINE Bus STARTED
+[02/Apr/2014:16:34:45] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 34, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 55, in compute_nearest_neighbour
+    sorted = collections.OrderedDict(sorted(euc_distances, key='distance'))
+UnboundLocalError: local variable 'sorted' referenced before assignment
+
+[02/Apr/2014:16:38:30] ENGINE Bus STARTING
+[02/Apr/2014:16:38:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:38:30] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:38:30] ENGINE Bus STARTED
+[02/Apr/2014:16:39:33] ENGINE Bus STARTING
+[02/Apr/2014:16:39:33] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:39:34] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:39:34] ENGINE Bus STARTED
+[02/Apr/2014:16:40:49] ENGINE Bus STARTING
+[02/Apr/2014:16:40:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:40:49] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:40:49] ENGINE Bus STARTED
+[02/Apr/2014:16:41:56] ENGINE Bus STARTING
+[02/Apr/2014:16:41:56] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:41:56] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:41:56] ENGINE Bus STARTED
+[02/Apr/2014:16:42:02] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 34, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 55, in compute_nearest_neighbour
+    euc_distances.sort(key=lambda tup: tup[3]).reverse=True
+AttributeError: 'NoneType' object has no attribute 'reverse'
+
+[02/Apr/2014:16:42:50] ENGINE Bus STARTING
+[02/Apr/2014:16:42:50] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:42:50] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:42:50] ENGINE Bus STARTED
+[02/Apr/2014:16:43:55] ENGINE Bus STARTING
+[02/Apr/2014:16:43:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:43:55] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:43:55] ENGINE Bus STARTED
+[02/Apr/2014:16:44:35] ENGINE Bus STARTING
+[02/Apr/2014:16:44:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:16:44:36] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:16:44:36] ENGINE Bus STARTED

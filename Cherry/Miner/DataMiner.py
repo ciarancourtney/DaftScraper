@@ -1,3 +1,4 @@
+import collections
 from math import sqrt
 from DaftScraper.items import DaftscrapApiItem
 from DaftScraper.settings import CONN
@@ -46,15 +47,19 @@ def compute_nearest_neighbour(property1, properties):
     for property2 in properties:
         distance = normalise(property1, property2)
 
-        euc_distances.append(((distance, property2['rent'])))
-    euc_distances.sort()
+        euc_distances.append(((
+                              property2['summary'], property2['street'], property2['rent'], distance, property2['link'],
+                              property2['photo'])))
+
+        item = euc_distances[0]
+    euc_distances.sort(key=lambda tup: tup[3], reverse=True)
 
     return euc_distances
 
 
 def normalise(property1, property2):
     weight1 = 0
-    weight2 = 12
+    weight2 = 5
 
     distance = sqrt(
         weight1 * (float(property1['lat']) - float(property2['lat'])) ** 2 +
