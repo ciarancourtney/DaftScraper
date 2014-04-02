@@ -1952,3 +1952,35 @@ TypeError: dump() takes at least 2 arguments (1 given)
 [02/Apr/2014:04:09:18] ENGINE Started monitor thread '_TimeoutMonitor'.
 [02/Apr/2014:04:09:18] ENGINE Serving on 127.0.0.1:8080
 [02/Apr/2014:04:09:18] ENGINE Bus STARTED
+[02/Apr/2014:04:14:55] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:14:55] ENGINE Bus STOPPING
+[02/Apr/2014:04:14:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:14:55] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:14:55] ENGINE Bus STOPPED
+[02/Apr/2014:04:14:55] ENGINE Bus EXITING
+[02/Apr/2014:04:14:55] ENGINE Bus EXITED
+[02/Apr/2014:04:14:55] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:17:33] ENGINE Bus STARTING
+[02/Apr/2014:04:17:33] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:17:34] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:17:34] ENGINE Bus STARTED
+[02/Apr/2014:04:19:14] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:19:14] ENGINE Bus STOPPING
+[02/Apr/2014:04:19:14] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:19:14] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:19:14] ENGINE Bus STOPPED
+[02/Apr/2014:04:19:14] ENGINE Bus EXITING
+[02/Apr/2014:04:19:14] ENGINE Bus EXITED
+[02/Apr/2014:04:19:14] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:19:15] ENGINE Bus STARTING
+[02/Apr/2014:04:19:15] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:19:15] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:19:15] ENGINE Bus STARTED
+[02/Apr/2014:04:22:52] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:22:52] ENGINE Bus STOPPING
+[02/Apr/2014:04:22:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:22:52] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:22:52] ENGINE Bus STOPPED
+[02/Apr/2014:04:22:52] ENGINE Bus EXITING
+[02/Apr/2014:04:22:52] ENGINE Bus EXITED
+[02/Apr/2014:04:22:52] ENGINE Waiting for child threads to terminate...
