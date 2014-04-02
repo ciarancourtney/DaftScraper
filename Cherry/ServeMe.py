@@ -1,6 +1,7 @@
+import json
 import os
-from Cherry.Miner.DataMiner import select_by_county
-from DaftScraper.items import DaftscrapedItem, DaftscrapApiItem
+from Cherry.Miner.DataMiner import select_by_county, compute_nearest_neighbour
+from DaftScraper.items import DaftscrapApiItem
 
 __author__ = 'danmalone'
 import cherrypy
@@ -21,17 +22,31 @@ class Api(object):
     def api(self):
         print 'hi api'
 
+
 @cherrypy.expose
-def rentals():
+def rentals(lat =None, long=None, county=None):
     item = DaftscrapApiItem()
-    item['area'] = 'Dublin'
+    # item['area'] = 'Malahide'
+    item['county'] = 'Dublin'
+    item['lat'] = lat
+    item['long'] = long
     items = select_by_county(item)
-    return str(len(items)) + ' Length'
+    neighbours = compute_nearest_neighbour(item, items)
+    nearest = []
+    if len(neighbours) > 5:
+        for item in neighbours[:5]:
+            nearest.append(item)
+        return json.dumps(nearest)
+
+    else:
+        return json.dumps('[]')
+
 
 @cherrypy.expose
 def reports():
     tmpl = lookup.get_template("reports.html")
     return tmpl.render()
+
 
 @cherrypy.expose
 def export():

@@ -1342,3 +1342,613 @@ TypeError: 'int' object is not iterable
 [01/Apr/2014:18:48:46] ENGINE Started monitor thread '_TimeoutMonitor'.
 [01/Apr/2014:18:48:46] ENGINE Serving on 127.0.0.1:8080
 [01/Apr/2014:18:48:46] ENGINE Bus STARTED
+[02/Apr/2014:01:21:40] ENGINE Bus STARTING
+[02/Apr/2014:01:21:40] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:01:21:40] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:01:21:40] ENGINE Bus STARTED
+[02/Apr/2014:01:22:49] ENGINE Bus STARTING
+[02/Apr/2014:01:22:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:01:22:49] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:01:22:49] ENGINE Bus STARTED
+[02/Apr/2014:01:23:56] ENGINE Bus STARTING
+[02/Apr/2014:01:23:56] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:01:23:56] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:01:23:56] ENGINE Bus STARTED
+[02/Apr/2014:01:25:00] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 30, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 47, in compute_nearest_neighbour
+    distance = normalise(property1, property2)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 60, in normalise
+    weight2 * (property1['long'] - property2['long']) ** 2 +
+  File "/Library/Python/2.7/site-packages/scrapy/item.py", line 50, in __getitem__
+    return self._values[key]
+KeyError: 'lat'
+
+[02/Apr/2014:01:25:33] ENGINE Bus STARTING
+[02/Apr/2014:01:25:33] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:01:25:33] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:01:25:33] ENGINE Bus STARTED
+[02/Apr/2014:01:25:43] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 30, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 47, in compute_nearest_neighbour
+    distance = normalise(property1, property2)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 60, in normalise
+    weight2 * (property1['Longitude'] - property2['Longitude']) ** 2 +
+  File "/Library/Python/2.7/site-packages/scrapy/item.py", line 50, in __getitem__
+    return self._values[key]
+KeyError: 'Lat'
+
+[02/Apr/2014:01:45:34] ENGINE Bus STARTING
+[02/Apr/2014:01:45:34] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:01:45:34] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:01:45:34] ENGINE Bus STARTED
+[02/Apr/2014:02:03:44] ENGINE Bus STARTING
+[02/Apr/2014:02:03:44] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:02:03:44] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:02:03:44] ENGINE Bus STARTED
+[02/Apr/2014:02:05:25] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:02:05:25] ENGINE Bus STOPPING
+[02/Apr/2014:02:05:25] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:02:05:25] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:02:05:25] ENGINE Bus STOPPED
+[02/Apr/2014:02:05:25] ENGINE Bus EXITING
+[02/Apr/2014:02:05:25] ENGINE Bus EXITED
+[02/Apr/2014:02:05:25] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:02:05:26] ENGINE Bus STARTING
+[02/Apr/2014:02:05:26] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:02:05:26] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:02:05:26] ENGINE Bus STARTED
+[02/Apr/2014:02:06:30] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:02:06:30] ENGINE Bus STOPPING
+[02/Apr/2014:02:06:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:02:06:35] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:02:06:35] ENGINE Bus STOPPED
+[02/Apr/2014:02:06:35] ENGINE Bus EXITING
+[02/Apr/2014:02:06:35] ENGINE Bus EXITED
+[02/Apr/2014:02:06:35] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:02:06:35] ENGINE Bus STARTING
+[02/Apr/2014:02:06:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:02:06:35] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:02:06:35] ENGINE Bus STARTED
+[02/Apr/2014:03:11:00] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:03:11:00] ENGINE Bus STOPPING
+[02/Apr/2014:03:11:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:03:11:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:11:00] ENGINE Bus STOPPED
+[02/Apr/2014:03:11:00] ENGINE Bus EXITING
+[02/Apr/2014:03:11:00] ENGINE Bus EXITED
+[02/Apr/2014:03:11:00] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:03:11:01] ENGINE Bus STARTING
+[02/Apr/2014:03:11:01] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:11:02] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:11:02] ENGINE Bus STARTED
+[02/Apr/2014:03:31:11] ENGINE Bus STARTING
+[02/Apr/2014:03:31:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:31:16] ENGINE Error in 'start' listener <bound method Server.start of <cherrypy._cpserver.Server object at 0x10f7b07d0>>
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/process/wspbus.py", line 197, in publish
+    output.append(listener(*args, **kwargs))
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpserver.py", line 151, in start
+    ServerAdapter.start(self)
+  File "/Library/Python/2.7/site-packages/cherrypy/process/servers.py", line 168, in start
+    wait_for_free_port(*self.bind_addr)
+  File "/Library/Python/2.7/site-packages/cherrypy/process/servers.py", line 412, in wait_for_free_port
+    raise IOError("Port %r not free on %r" % (port, host))
+IOError: Port 8080 not free on '127.0.0.1'
+
+[02/Apr/2014:03:31:16] ENGINE Shutting down due to error in start listener:
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/process/wspbus.py", line 235, in start
+    self.publish('start')
+  File "/Library/Python/2.7/site-packages/cherrypy/process/wspbus.py", line 215, in publish
+    raise exc
+ChannelFailures: IOError("Port 8080 not free on '127.0.0.1'",)
+
+[02/Apr/2014:03:31:16] ENGINE Bus STOPPING
+[02/Apr/2014:03:31:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) already shut down
+[02/Apr/2014:03:31:16] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:31:16] ENGINE Bus STOPPED
+[02/Apr/2014:03:31:16] ENGINE Bus EXITING
+[02/Apr/2014:03:31:16] ENGINE Bus EXITED
+[02/Apr/2014:03:31:21] ENGINE Bus STARTING
+[02/Apr/2014:03:31:21] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:31:21] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:31:21] ENGINE Bus STARTED
+[02/Apr/2014:03:31:29] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 30, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 47, in compute_nearest_neighbour
+    distance = normalise(property1, property2)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 60, in normalise
+    weight2 * (property1['Longitude'] - property2['Longitude']) ** 2 +
+  File "/Library/Python/2.7/site-packages/scrapy/item.py", line 50, in __getitem__
+    return self._values[key]
+KeyError: 'Lat'
+
+[02/Apr/2014:03:34:07] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:03:34:07] ENGINE Bus STOPPING
+[02/Apr/2014:03:34:07] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:03:34:07] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:34:07] ENGINE Bus STOPPED
+[02/Apr/2014:03:34:07] ENGINE Bus EXITING
+[02/Apr/2014:03:34:07] ENGINE Bus EXITED
+[02/Apr/2014:03:34:07] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:03:34:07] ENGINE Bus STARTING
+[02/Apr/2014:03:34:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:34:07] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:34:07] ENGINE Bus STARTED
+[02/Apr/2014:03:34:37] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:03:34:37] ENGINE Bus STOPPING
+[02/Apr/2014:03:34:42] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:03:34:42] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:34:42] ENGINE Bus STOPPED
+[02/Apr/2014:03:34:42] ENGINE Bus EXITING
+[02/Apr/2014:03:34:42] ENGINE Bus EXITED
+[02/Apr/2014:03:34:42] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:03:34:42] ENGINE Bus STARTING
+[02/Apr/2014:03:34:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:34:42] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:34:42] ENGINE Bus STARTED
+[02/Apr/2014:03:35:27] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:03:35:27] ENGINE Bus STOPPING
+[02/Apr/2014:03:35:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:03:35:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:35:27] ENGINE Bus STOPPED
+[02/Apr/2014:03:35:27] ENGINE Bus EXITING
+[02/Apr/2014:03:35:27] ENGINE Bus EXITED
+[02/Apr/2014:03:35:27] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:03:35:27] ENGINE Bus STARTING
+[02/Apr/2014:03:35:27] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:35:27] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:35:27] ENGINE Bus STARTED
+[02/Apr/2014:03:35:35] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 27, in rentals
+    print(key1 + '' + key2)
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'str'
+
+[02/Apr/2014:03:36:36] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 31, in rentals
+    item['Lat'] = 0.0
+  File "/Library/Python/2.7/site-packages/scrapy/item.py", line 57, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'DaftscrapApiItem does not support field: Lat'
+
+[02/Apr/2014:03:41:14] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:03:41:14] ENGINE Bus STOPPING
+[02/Apr/2014:03:41:14] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:03:41:14] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:41:14] ENGINE Bus STOPPED
+[02/Apr/2014:03:41:14] ENGINE Bus EXITING
+[02/Apr/2014:03:41:14] ENGINE Bus EXITED
+[02/Apr/2014:03:41:14] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:03:41:14] ENGINE Bus STARTING
+[02/Apr/2014:03:41:14] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:41:14] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:41:14] ENGINE Bus STARTED
+[02/Apr/2014:03:42:25] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 31, in rentals
+    item['Lat'] = 0.0
+  File "/Library/Python/2.7/site-packages/scrapy/item.py", line 57, in __setitem__
+    (self.__class__.__name__, key))
+KeyError: 'DaftscrapApiItem does not support field: Lat'
+
+[02/Apr/2014:03:43:18] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:03:43:18] ENGINE Bus STOPPING
+[02/Apr/2014:03:43:19] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:03:43:19] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:43:19] ENGINE Bus STOPPED
+[02/Apr/2014:03:43:19] ENGINE Bus EXITING
+[02/Apr/2014:03:43:19] ENGINE Bus EXITED
+[02/Apr/2014:03:43:19] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:03:43:19] ENGINE Bus STARTING
+[02/Apr/2014:03:43:19] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:43:19] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:43:19] ENGINE Bus STARTED
+[02/Apr/2014:03:43:26] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 34, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 47, in compute_nearest_neighbour
+    distance = normalise(property1, property2)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 60, in normalise
+    weight2 * (property1['Longitude'] - property2['Longitude']) ** 2 +
+  File "/Library/Python/2.7/site-packages/scrapy/item.py", line 50, in __getitem__
+    return self._values[key]
+KeyError: 'Lat'
+
+[02/Apr/2014:03:44:12] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:03:44:12] ENGINE Bus STOPPING
+[02/Apr/2014:03:44:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:03:44:12] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:44:12] ENGINE Bus STOPPED
+[02/Apr/2014:03:44:12] ENGINE Bus EXITING
+[02/Apr/2014:03:44:12] ENGINE Bus EXITED
+[02/Apr/2014:03:44:12] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:03:44:12] ENGINE Bus STARTING
+[02/Apr/2014:03:44:12] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:44:12] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:44:12] ENGINE Bus STARTED
+[02/Apr/2014:03:44:18] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 34, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 47, in compute_nearest_neighbour
+    distance = normalise(property1, property2)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 60, in normalise
+    weight2 * (property1['long'] - property2['long']) ** 2 +
+TypeError: unsupported operand type(s) for -: 'float' and 'str'
+
+[02/Apr/2014:03:44:47] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:03:44:47] ENGINE Bus STOPPING
+[02/Apr/2014:03:44:47] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:03:44:47] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:44:47] ENGINE Bus STOPPED
+[02/Apr/2014:03:44:47] ENGINE Bus EXITING
+[02/Apr/2014:03:44:47] ENGINE Bus EXITED
+[02/Apr/2014:03:44:47] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:03:44:49] ENGINE Bus STARTING
+[02/Apr/2014:03:44:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:44:49] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:44:49] ENGINE Bus STARTED
+[02/Apr/2014:03:48:23] ENGINE Bus STARTING
+[02/Apr/2014:03:48:23] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:48:23] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:48:23] ENGINE Bus STARTED
+[02/Apr/2014:03:49:25] ENGINE Bus STARTING
+[02/Apr/2014:03:49:25] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:49:25] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:49:25] ENGINE Bus STARTED
+[02/Apr/2014:03:51:25] ENGINE Bus STARTING
+[02/Apr/2014:03:51:25] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:51:25] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:51:25] ENGINE Bus STARTED
+[02/Apr/2014:03:52:07] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 33, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 47, in compute_nearest_neighbour
+    distance = normalise(property1, property2)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 60, in normalise
+    weight2 * (property1['long'] - float(property2['long'])) ** 2 +
+TypeError: unsupported operand type(s) for -: 'unicode' and 'float'
+
+[02/Apr/2014:03:52:57] ENGINE Bus STARTING
+[02/Apr/2014:03:52:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:52:57] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:52:57] ENGINE Bus STARTED
+[02/Apr/2014:03:53:14] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 33, in rentals
+    neighbours = compute_nearest_neighbour(item, items)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 47, in compute_nearest_neighbour
+    distance = normalise(property1, property2)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/Miner/DataMiner.py", line 61, in normalise
+    weight3 * (float(property1['rent']) - float(property2['rent'])) ** 2)
+  File "/Library/Python/2.7/site-packages/scrapy/item.py", line 50, in __getitem__
+    return self._values[key]
+KeyError: 'rent'
+
+[02/Apr/2014:03:54:22] ENGINE Bus STARTING
+[02/Apr/2014:03:54:22] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:54:22] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:54:22] ENGINE Bus STARTED
+[02/Apr/2014:03:56:09] ENGINE Bus STARTING
+[02/Apr/2014:03:56:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:56:09] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:56:09] ENGINE Bus STARTED
+[02/Apr/2014:03:56:21] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 39, in rentals
+    return json.dumps(nearest)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: {'area': 'Dublin 2',
+ 'collection': 'monthly',
+ 'county': 'Dublin',
+ 'id': 19201L,
+ 'lat': '53.343511384207',
+ 'link': '/lettings/castle-street-dublin-2-dublin/1433176/',
+ 'long': '-6.2684025524597',
+ 'photo': 'http://m0.dmlimg.com/NGIwZDA4NTE1NmE2NDFmMzZlNjNhYjM1NjQ5M2MxMjCAz8nzdtxuuDcGLEOLf_DOaHR0cDovL21lZGlhLmRhZnQuaWUvcHJvcGVydHktaW1hZ2UvQ2FNNGN4N1ZIbEhCSnlpb3VLR1hnMmFIRFFHSHNlbkJqdXdhbjBfRkJOdGxQVGMxZURjMS5qcGd8fHx8fHw3NXg3NXxodHRwOi8vd3d3LmRhZnQuaWUvaS93YX',
+ 'rent': 1250L,
+ 'street': 'Castle Street',
+ 'summary': '2 Bed Apartment To Let'} is not JSON serializable
+
+[02/Apr/2014:03:56:43] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:03:56:43] ENGINE Bus STOPPING
+[02/Apr/2014:03:56:43] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:03:56:43] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:03:56:43] ENGINE Bus STOPPED
+[02/Apr/2014:03:56:43] ENGINE Bus EXITING
+[02/Apr/2014:03:56:43] ENGINE Bus EXITED
+[02/Apr/2014:03:56:43] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:03:56:43] ENGINE Bus STARTING
+[02/Apr/2014:03:56:43] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:03:56:43] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:03:56:43] ENGINE Bus STARTED
+[02/Apr/2014:03:56:48] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 39, in rentals
+    return json.dumps(nearest[0])
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: {'area': 'Dublin 2',
+ 'collection': 'monthly',
+ 'county': 'Dublin',
+ 'id': 19246L,
+ 'lat': '53.340858',
+ 'link': '/lettings/76-aungier-street-dublin-2-dublin/1433169/',
+ 'long': '-6.26598099',
+ 'photo': 'http://m1.dmlimg.com/MjRlM2ExNzM5Zjk3YjU5ODVhMGQ2M2RkMDA4ZmFjZjFQts9xMLgTjws8dSG1gLiDaHR0cDovL21lZGlhLmRhZnQuaWUvcHJvcGVydHktaW1hZ2UvVUczbGhycEQ0ZnhYUzZkd3JzUHV1MkpSQWhLb2NFbVQ5QUg3ZnlpR0w4QmxQVGMxZURjMS5wbmd8fHx8fHw3NXg3NXxodHRwOi8vd3d3LmRhZnQuaWUvaS93YX',
+ 'rent': 950L,
+ 'street': '76 Aungier Street',
+ 'summary': '1 Bed Apartment To Let'} is not JSON serializable
+
+[02/Apr/2014:04:00:08] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:00:08] ENGINE Bus STOPPING
+[02/Apr/2014:04:00:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:00:08] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:00:08] ENGINE Bus STOPPED
+[02/Apr/2014:04:00:08] ENGINE Bus EXITING
+[02/Apr/2014:04:00:08] ENGINE Bus EXITED
+[02/Apr/2014:04:00:08] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:00:08] ENGINE Bus STARTING
+[02/Apr/2014:04:00:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:00:09] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:00:09] ENGINE Bus STARTED
+[02/Apr/2014:04:01:12] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:01:12] ENGINE Bus STOPPING
+[02/Apr/2014:04:01:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:01:12] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:01:12] ENGINE Bus STOPPED
+[02/Apr/2014:04:01:12] ENGINE Bus EXITING
+[02/Apr/2014:04:01:12] ENGINE Bus EXITED
+[02/Apr/2014:04:01:12] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:01:12] ENGINE Bus STARTING
+[02/Apr/2014:04:01:12] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:01:12] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:01:12] ENGINE Bus STARTED
+[02/Apr/2014:04:01:37] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:01:37] ENGINE Bus STOPPING
+[02/Apr/2014:04:01:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:01:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:01:37] ENGINE Bus STOPPED
+[02/Apr/2014:04:01:37] ENGINE Bus EXITING
+[02/Apr/2014:04:01:37] ENGINE Bus EXITED
+[02/Apr/2014:04:01:37] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:01:37] ENGINE Bus STARTING
+[02/Apr/2014:04:01:37] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:01:37] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:01:37] ENGINE Bus STARTED
+[02/Apr/2014:04:01:52] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:01:52] ENGINE Bus STOPPING
+[02/Apr/2014:04:01:53] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:01:53] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:01:53] ENGINE Bus STOPPED
+[02/Apr/2014:04:01:53] ENGINE Bus EXITING
+[02/Apr/2014:04:01:53] ENGINE Bus EXITED
+[02/Apr/2014:04:01:53] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:01:53] ENGINE Bus STARTING
+[02/Apr/2014:04:01:53] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:01:53] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:01:53] ENGINE Bus STARTED
+[02/Apr/2014:04:02:04] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:02:04] ENGINE Bus STOPPING
+[02/Apr/2014:04:02:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:02:09] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:02:09] ENGINE Bus STOPPED
+[02/Apr/2014:04:02:09] ENGINE Bus EXITING
+[02/Apr/2014:04:02:09] ENGINE Bus EXITED
+[02/Apr/2014:04:02:09] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:02:09] ENGINE Bus STARTING
+[02/Apr/2014:04:02:09] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:02:09] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:02:09] ENGINE Bus STARTED
+[02/Apr/2014:04:02:26] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:02:26] ENGINE Bus STOPPING
+[02/Apr/2014:04:02:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:02:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:02:27] ENGINE Bus STOPPED
+[02/Apr/2014:04:02:27] ENGINE Bus EXITING
+[02/Apr/2014:04:02:27] ENGINE Bus EXITED
+[02/Apr/2014:04:02:27] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:02:27] ENGINE Bus STARTING
+[02/Apr/2014:04:02:27] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:02:27] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:02:27] ENGINE Bus STARTED
+[02/Apr/2014:04:03:00] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:03:00] ENGINE Bus STOPPING
+[02/Apr/2014:04:03:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:03:05] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:03:05] ENGINE Bus STOPPED
+[02/Apr/2014:04:03:05] ENGINE Bus EXITING
+[02/Apr/2014:04:03:05] ENGINE Bus EXITED
+[02/Apr/2014:04:03:05] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:03:06] ENGINE Bus STARTING
+[02/Apr/2014:04:03:06] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:03:06] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:03:06] ENGINE Bus STARTED
+[02/Apr/2014:04:03:11] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 39, in rentals
+    return json.dumps(nearest[0])
+IndexError: list index out of range
+
+[02/Apr/2014:04:03:38] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 39, in rentals
+    return json.dumps(nearest[0])
+IndexError: list index out of range
+
+[02/Apr/2014:04:03:41] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 39, in rentals
+    return json.dumps(nearest[0])
+IndexError: list index out of range
+
+[02/Apr/2014:04:04:39] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:04:39] ENGINE Bus STOPPING
+[02/Apr/2014:04:04:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:04:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:04:39] ENGINE Bus STOPPED
+[02/Apr/2014:04:04:39] ENGINE Bus EXITING
+[02/Apr/2014:04:04:39] ENGINE Bus EXITED
+[02/Apr/2014:04:04:39] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:04:39] ENGINE Bus STARTING
+[02/Apr/2014:04:04:39] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:04:39] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:04:39] ENGINE Bus STARTED
+[02/Apr/2014:04:04:51] HTTP Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/cherrypy/_cprequest.py", line 656, in respond
+    response.body = self.handler()
+  File "/Library/Python/2.7/site-packages/cherrypy/lib/encoding.py", line 188, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/cherrypy/_cpdispatch.py", line 34, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/Users/danmalone/Documents/Programming/2014/Python/DaftScraper/Cherry/ServeMe.py", line 42, in rentals
+    return json.dump('[]')
+TypeError: dump() takes at least 2 arguments (1 given)
+
+[02/Apr/2014:04:05:03] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:05:03] ENGINE Bus STOPPING
+[02/Apr/2014:04:05:03] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:05:03] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:05:03] ENGINE Bus STOPPED
+[02/Apr/2014:04:05:03] ENGINE Bus EXITING
+[02/Apr/2014:04:05:03] ENGINE Bus EXITED
+[02/Apr/2014:04:05:03] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:05:03] ENGINE Bus STARTING
+[02/Apr/2014:04:05:03] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:05:03] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:05:03] ENGINE Bus STARTED
+[02/Apr/2014:04:05:52] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:05:52] ENGINE Bus STOPPING
+[02/Apr/2014:04:05:52] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:05:52] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:05:52] ENGINE Bus STOPPED
+[02/Apr/2014:04:05:52] ENGINE Bus EXITING
+[02/Apr/2014:04:05:52] ENGINE Bus EXITED
+[02/Apr/2014:04:05:52] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:05:52] ENGINE Bus STARTING
+[02/Apr/2014:04:05:52] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:05:53] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:05:53] ENGINE Bus STARTED
+[02/Apr/2014:04:07:22] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:07:22] ENGINE Bus STOPPING
+[02/Apr/2014:04:07:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:07:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:07:22] ENGINE Bus STOPPED
+[02/Apr/2014:04:07:22] ENGINE Bus EXITING
+[02/Apr/2014:04:07:22] ENGINE Bus EXITED
+[02/Apr/2014:04:07:22] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:07:22] ENGINE Bus STARTING
+[02/Apr/2014:04:07:22] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:07:22] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:07:22] ENGINE Bus STARTED
+[02/Apr/2014:04:09:18] ENGINE Keyboard Interrupt: shutting down bus
+[02/Apr/2014:04:09:18] ENGINE Bus STOPPING
+[02/Apr/2014:04:09:18] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('127.0.0.1', 8080)) shut down
+[02/Apr/2014:04:09:18] ENGINE Stopped thread '_TimeoutMonitor'.
+[02/Apr/2014:04:09:18] ENGINE Bus STOPPED
+[02/Apr/2014:04:09:18] ENGINE Bus EXITING
+[02/Apr/2014:04:09:18] ENGINE Bus EXITED
+[02/Apr/2014:04:09:18] ENGINE Waiting for child threads to terminate...
+[02/Apr/2014:04:09:18] ENGINE Bus STARTING
+[02/Apr/2014:04:09:18] ENGINE Started monitor thread '_TimeoutMonitor'.
+[02/Apr/2014:04:09:18] ENGINE Serving on 127.0.0.1:8080
+[02/Apr/2014:04:09:18] ENGINE Bus STARTED

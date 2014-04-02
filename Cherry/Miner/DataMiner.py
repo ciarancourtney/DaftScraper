@@ -1,3 +1,4 @@
+from math import sqrt
 from DaftScraper.items import DaftscrapApiItem
 from DaftScraper.settings import CONN
 
@@ -26,9 +27,9 @@ def map_to_item(cursor, items):
 
 def select_by_county(data):
     cursor = CONN.cursor()
-    area = data['area']
     try:
-        cursor.execute("select * From Rentals where County=%s", (area,))
+        cursor.execute("select * From Rentals where County=%s AND Collection=%s",
+                       (data['county'], 'monthly'))
 
     except Exception, e:
         print e.message
@@ -39,17 +40,26 @@ def select_by_county(data):
     return items
 
 
-def distance_between_points(property1, property2):
-    distance = 0
-    distance += abs(property1['lat'] - property2['lat'])
-    distance += abs(property1['long'] - property2['long'])
-    distance += abs(property1['rent'] - property2['rent'])
+def compute_nearest_neighbour(property1, properties):
+    euc_distances = []
+
+    for property2 in properties:
+        distance = normalise(property1, property2)
+
+        euc_distances.append(((distance, property2['rent'])))
+    euc_distances.sort()
+
+    return euc_distances
+
+
+def normalise(property1, property2):
+    weight1 = 0
+    weight2 = 12
+
+    distance = sqrt(
+        weight1 * (float(property1['lat']) - float(property2['lat'])) ** 2 +
+        weight2 * (float(property1['long']) - float(property2['long'])) ** 2)
+
     return distance
-
-
-
-
-
-
 
 
