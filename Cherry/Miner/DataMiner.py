@@ -26,11 +26,11 @@ def map_to_item(cursor, items):
         result = cursor.fetchone()
 
 
-def select_by_county(data):
+def select_by_county(data, beds):
     cursor = CONN.cursor()
     try:
-        cursor.execute("select * From Rentals where County=%s AND Collection=%s",
-                       (data['county'], 'monthly'))
+        cursor.execute("select * From Rentals where County=%s AND Collection=%s and Summary like %s",
+                       (data['county'], 'monthly', '%' + beds + '%'), )
 
     except Exception, e:
         print e.message
@@ -48,18 +48,18 @@ def compute_nearest_neighbour(property1, properties):
         distance = normalise(property1, property2)
 
         euc_distances.append(((
-                              property2['summary'], property2['street'], property2['rent'], distance, property2['link'],
-                              property2['photo'])))
+                                  property2['summary'], property2['street'], property2['rent'], distance,
+                                  'www.daft.ie' + property2['link'],
+                                  property2['photo'])))
 
-        item = euc_distances[0]
-    euc_distances.sort(key=lambda tup: tup[3], reverse=True)
+    euc_distances.sort(key=lambda tup: tup[3])
 
     return euc_distances
 
 
 def normalise(property1, property2):
-    weight1 = 0
-    weight2 = 5
+    weight1 = .5
+    weight2 = .5
 
     distance = sqrt(
         weight1 * (float(property1['lat']) - float(property2['lat'])) ** 2 +

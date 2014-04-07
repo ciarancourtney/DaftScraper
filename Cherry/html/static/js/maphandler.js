@@ -5,7 +5,7 @@
 var map;
 var geocoder;
 var markersArray = [];
-var url = "http://127.0.0.1:8080/api/rentals"
+var url = "http://127.0.0.1:8080/api/rentals";
 
 function clearOverlays() {
     for (var i = 0; i < markersArray.length; i++) {
@@ -14,7 +14,8 @@ function clearOverlays() {
     markersArray.length = 0;
 }
 
-function get(param1, param2, param3) {
+
+function get(param1, param2, param3, param4) {
 //        $.get(
 //                "http://127.0.0.1:8080/api/rentals",
 //                {lat: param1, long: param2, county: param3},
@@ -22,11 +23,19 @@ function get(param1, param2, param3) {
 //                    alert('page content: ' + data);
 //                }
 //        );
+//    $(document).ready(function () {
+//        $('.btn').click(function () {
+//            console.log('Called');
+//            alert($(this).attr('data-value'));
+//        });
+//    });
+
     $.getJSON(url,
         {
             lat: param1,
             long: param2,
-            county: param3},
+            county: param3,
+            beds: param4},
 
         function (data) {
             console.log("success");
@@ -60,8 +69,7 @@ function get(param1, param2, param3) {
 
 //                items.push("<li id='" + key + "'>" + val + "</li>");
             });
-            alertify.log('Estimated price is:' + price.toFixed(0))
-
+            alertify.success('Predicted price is: ' + price.toFixed(0),20000)
 
 //            $("<tbody>", {
 //                "class": "table table-striped",
@@ -110,8 +118,19 @@ function initialize() {
                         });
                         clearOverlays()
                         markersArray.push(marker);
-
-                        get(latLng.lat(), latLng.lng(), county);
+                        alertify.prompt("How many beds?", function (e, str) {
+                            // str is the input text
+                            var num = parseInt(str);
+                            if (e) {
+                                if (isNaN(num)) {
+                                    alertify.log('sorry try again');
+                                } else {
+                                    get(latLng.lat(), latLng.lng(), county, num);
+                                }
+                            } else {
+                                alertify.log('Cancelled');
+                            }
+                        }, "2");
                     } else {
                         // user clicked "cancel"
                     }

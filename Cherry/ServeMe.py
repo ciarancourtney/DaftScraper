@@ -24,13 +24,14 @@ class Api(object):
 
 
 @cherrypy.expose
-def rentals(lat =None, long=None, county=None):
+def rentals(lat =None, long=None, county=None, beds= None):
     item = DaftscrapApiItem()
     # item['area'] = 'Malahide'
     item['county'] = 'Dublin'
     item['lat'] = lat
     item['long'] = long
-    items = select_by_county(item)
+
+    items = select_by_county(item, beds)
     neighbours = compute_nearest_neighbour(item, items)
     nearest = []
     if len(neighbours) > 5:
@@ -65,7 +66,7 @@ if __name__ == '__main__':
 
     conf = {'/static': {
         'tools.staticdir.on': True,
-        'tools.staticdir.dir': os.path.join(PATH, 'static'),
+        'tools.staticdir.dir': os.path.join(PATH, 'html/static'),
         'log.screen': True
 
     }}

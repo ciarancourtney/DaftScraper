@@ -3,6 +3,7 @@
 # Dont forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import json
+import traceback
 from DaftScraper.settings import CONN
 
 
@@ -19,7 +20,7 @@ class DaftScraperPipeline(object):
             insert_json_row(item)
 
         except Exception, e:
-            print(e.message)
+            print('Exception pipeline: ' + e.message)
         return item
 
 
@@ -38,27 +39,31 @@ def insert_scraped_row(data):
 
             CONN.commit()
             #     print Inserted
-
+            cursor.close()
 
     except Exception, e:
-        print e.message
+        print('Exception inserting scraped row: ' + e.message)
 
 
 def insert_json_row(item):
     cursor = CONN.cursor()  # important MySQLdb Cursor object
 
     try:
+        if not checkForDuplicate(item):
+            return
+        else:
             cursor.execute(
-                "insert into rentals (Area, Collection, County, Listing_id, Lat, Longitude, Link,Photo_url,Street,Rent,Summary) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
+                "insert into Rentals (Area, Collection, County, Listing_id, Lat, Longitude, Link,Photo_url,Street,Rent,Summary) values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",
                 (item['area'], item['collection'], item['county'], item['id'], item['lat'], item['long'], item['link'],
                  item['photo'], item['street'], item['rent'], item['summary']))
 
             CONN.commit()
-            #     print Inserted
-
+        #     print Inserted
+        cursor.close()
 
     except Exception, e:
-        print e.message
+        print 'Exception inserting json: ' + e.message
+        print traceback.format_exc()
 
 
 def checkForDuplicate(data):
@@ -68,6 +73,7 @@ def checkForDuplicate(data):
         (data['address'],))
 
     duplicate = cursor.fetchone()
+    cursor.close()
     if duplicate:
         return False
     else:
@@ -77,11 +83,13 @@ def checkForDuplicate(data):
 def checkForDuplicate_rental(data):
     cursor = CONN.cursor()
     cursor.execute(
-        "select * From {0} WHERE Address=%s".format(data['type']),
-        (data['address'],))
+        "select * From {0} WHERE Listing_id=%s".format('rentals'),
+        (data['item'],))
 
     duplicate = cursor.fetchone()
+    cursor.close()
     if duplicate:
         return False
     else:
         return True
+
