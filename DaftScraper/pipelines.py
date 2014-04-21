@@ -2,8 +2,10 @@
 #
 # Dont forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
-import json
+from smtplib import SMTPException
 import traceback
+import smtplib
+
 from DaftScraper.settings import CONN
 
 
@@ -39,17 +41,18 @@ def insert_scraped_row(data):
 
             CONN.commit()
             #     print Inserted
-            cursor.close()
 
     except Exception, e:
         print('Exception inserting scraped row: ' + e.message)
+    finally:
+        cursor.close()
 
 
 def insert_json_row(item):
     cursor = CONN.cursor()  # important MySQLdb Cursor object
 
     try:
-        if not checkForDuplicate(item):
+        if not checkForDuplicate_rental(item):
             return
         else:
             cursor.execute(
@@ -58,12 +61,13 @@ def insert_json_row(item):
                  item['photo'], item['street'], item['rent'], item['summary']))
 
             CONN.commit()
-        #     print Inserted
-        cursor.close()
+            sendemail(item)
 
     except Exception, e:
         print 'Exception inserting json: ' + e.message
         print traceback.format_exc()
+    finally:
+        cursor.close()
 
 
 def checkForDuplicate(data):
@@ -73,7 +77,7 @@ def checkForDuplicate(data):
         (data['address'],))
 
     duplicate = cursor.fetchone()
-    cursor.close()
+
     if duplicate:
         return False
     else:
@@ -83,13 +87,47 @@ def checkForDuplicate(data):
 def checkForDuplicate_rental(data):
     cursor = CONN.cursor()
     cursor.execute(
-        "select * From {0} WHERE Listing_id=%s".format('rentals'),
-        (data['item'],))
+        "select * From {0} WHERE Listing_id=%s".format('Rentals'),
+        (data['id'],))
 
     duplicate = cursor.fetchone()
-    cursor.close()
+
     if duplicate:
         return False
     else:
         return True
 
+
+def sendemail(item):
+    fromaddr = 'ashaman@redbrick.dcu.ie'
+    toaddrs = 'daft@vadimck.com'
+    if 'monthly' in item['collection'].lower():
+        if 'dublin' in item['county'].lower():
+            if int(item['rent']) <= 2200:
+                if '3' in item['summary']:
+                    msg = "From: <ashaman@redbrick.dcu.ie>\nTo: <daft@vadimck.com>\nSubject: " + item[
+                        'summary'] + " " + str(item['rent'] + "\n\n")
+
+                    msg2 = "Area:{0}\nrent:{1},\nCollection:{2}\nStreet:{3},\nCounty:{4},\nLatitude:{5},\nLongitude:{6}\nlink:www.daft.ie{7}\nphoto:{8}".format(
+                        item['area'], str(item['rent']),
+                        item['collection'],
+                        item['street'], item['county'],
+                        str(item['lat']), str(item['long']),
+                        item['link'], item['photo'])
+
+                    # Credentials (if needed)
+                    username = 'ashaman'
+
+                    email = msg + msg2
+                    # The actual mail send
+                    try:
+                        server = smtplib.SMTP()
+                        server.connect()
+                        # server.starttls()
+                        # server.login(username, password)
+                        server.sendmail(fromaddr, toaddrs, email)
+                        server.quit()
+                    except SMTPException, e:
+                        print "Error: unable to send email" + e.message
+
+                        # SELECT * FROM `Rentals` WHERE `Collection` like '%Monthly%'  and `County` like '%Dublin%'  and `Rent` between 0 and 2200 and `Summary` like '%3%';

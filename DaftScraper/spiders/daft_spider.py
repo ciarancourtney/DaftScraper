@@ -11,6 +11,7 @@ __author__ = 'danmalone'
 class EtsySpider(CrawlSpider):
     name = "daft"
     # allowed_domains = ["daft.ie"]
+    DEFAULT_CHARSET = 'utf-8'
 
     def __init__(self, category=None, category2=None, *args, **kwargs):
         super(EtsySpider, self).__init__(*args, **kwargs)
@@ -146,18 +147,19 @@ class EtsySpider(CrawlSpider):
 
         resultItems = []
         for result in items:
+
             item = DaftscrapApiItem()
-            item['area'] = result['area']
-            item['collection'] = result['collection']
-            item['county'] = result['county']
+            item['area'] = result['area'].encode('utf-8')
+            item['collection'] = result['collection'].encode('utf-8')
+            item['county'] = result['county'].encode('utf-8')
             item['id'] = result['id']
             item['lat'] = result['lat']
             item['long'] = result['long']
-            item['link'] = result['link']
-            item['photo'] = result['photo']
-            item['rent'] = result['rent'].replace(',', '')
-            item['street'] = result['street']
-            item['summary'] = result['summary']
+            item['link'] = result['link'].encode('utf-8')
+            item['photo'] = result['photo'].encode('utf-8')
+            item['rent'] = result['rent'].replace(',', '').encode('utf-8')
+            item['street'] = result['street'].encode('utf-8')
+            item['summary'] = result['summary'].encode('utf-8')
 
             resultItems.append(item)
             yield item

@@ -38,6 +38,8 @@ def select_by_county(data, beds):
     items = []
     map_to_item(cursor, items)
 
+    cursor.close()
+    CONN.close()
     return items
 
 
