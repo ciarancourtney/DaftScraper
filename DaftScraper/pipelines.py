@@ -2,11 +2,8 @@
 #
 # Dont forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
-from smtplib import SMTPException
 import traceback
-import smtplib
-import secrets
-
+import mailer
 from DaftScraper.settings import CONN
 
 
@@ -41,7 +38,7 @@ def insert_scraped_row(data):
                  data['baths'], data['beds'], data['price']))
 
             CONN.commit()
-            #     print Inserted
+            # print Inserted
 
     except Exception, e:
         print('Exception inserting scraped row: ' + e.message)
@@ -62,7 +59,7 @@ def insert_json_row(item):
                  item['photo'], item['street'], item['rent'], item['summary']))
 
             CONN.commit()
-            # sendemail(item)
+            #mailer.sendemail(item)
 
     except Exception, e:
         print 'Exception inserting json: ' + e.message
@@ -99,22 +96,3 @@ def checkForDuplicate_rental(data):
         return True
 
 
-def sendemail(item):
-    fromaddr = 'aruthar72@gmail.com'
-    toaddrs = 'daft@vadimck.com'
-    if 'Monthly' in item['collection'] and 'Dublin' in item['county'] and item['rent'] < 2200 and '3' in item[
-        'summary']:
-        msg = 'New Property:' + item['area'], item['collection'], item['county'], item['id'], item['lat'], item['long'], \
-              item['link'], item['photo'], item['street'], item['rent'], item['summary']
-
-        # Credentials (if needed)
-        username = secrets.user
-        password = secrets.passW
-
-        # The actual mail send
-        server = smtplib.SMTP('smtp.gmail.com:587')
-        server.starttls()
-        server.login(username, password)
-        server.sendmail(fromaddr, toaddrs, msg)
-        server.quit()
-        # SELECT * FROM `Rentals` WHERE `Collection` like '%Monthly%'  and `County` like '%Dublin%'  and `Rent` between 0 and 2200 and `Summary` like '%3%';
