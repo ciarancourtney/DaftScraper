@@ -5,6 +5,7 @@
 from smtplib import SMTPException
 import traceback
 import smtplib
+import secrets
 
 from DaftScraper.settings import CONN
 
@@ -61,7 +62,7 @@ def insert_json_row(item):
                  item['photo'], item['street'], item['rent'], item['summary']))
 
             CONN.commit()
-            sendemail(item)
+            # sendemail(item)
 
     except Exception, e:
         print 'Exception inserting json: ' + e.message
@@ -99,35 +100,21 @@ def checkForDuplicate_rental(data):
 
 
 def sendemail(item):
-    fromaddr = 'ashaman@redbrick.dcu.ie'
+    fromaddr = 'aruthar72@gmail.com'
     toaddrs = 'daft@vadimck.com'
-    if 'monthly' in item['collection'].lower():
-        if 'dublin' in item['county'].lower():
-            if int(item['rent']) <= 2200:
-                if '3' in item['summary']:
-                    msg = "From: <ashaman@redbrick.dcu.ie>\nTo: <daft@vadimck.com>\nSubject: " + item[
-                        'summary'] + " " + str(item['rent'] + "\n\n")
+    if 'Monthly' in item['collection'] and 'Dublin' in item['county'] and item['rent'] < 2200 and '3' in item[
+        'summary']:
+        msg = 'New Property:' + item['area'], item['collection'], item['county'], item['id'], item['lat'], item['long'], \
+              item['link'], item['photo'], item['street'], item['rent'], item['summary']
 
-                    msg2 = "Area:{0}\nrent:{1},\nCollection:{2}\nStreet:{3},\nCounty:{4},\nLatitude:{5},\nLongitude:{6}\nlink:www.daft.ie{7}\nphoto:{8}".format(
-                        item['area'], str(item['rent']),
-                        item['collection'],
-                        item['street'], item['county'],
-                        str(item['lat']), str(item['long']),
-                        item['link'], item['photo'])
+        # Credentials (if needed)
+        username = secrets.user
+        password = secrets.passW
 
-                    # Credentials (if needed)
-                    username = 'ashaman'
-
-                    email = msg + msg2
-                    # The actual mail send
-                    try:
-                        server = smtplib.SMTP()
-                        server.connect()
-                        # server.starttls()
-                        # server.login(username, password)
-                        server.sendmail(fromaddr, toaddrs, email)
-                        server.quit()
-                    except SMTPException, e:
-                        print "Error: unable to send email" + e.message
-
-                        # SELECT * FROM `Rentals` WHERE `Collection` like '%Monthly%'  and `County` like '%Dublin%'  and `Rent` between 0 and 2200 and `Summary` like '%3%';
+        # The actual mail send
+        server = smtplib.SMTP('smtp.gmail.com:587')
+        server.starttls()
+        server.login(username, password)
+        server.sendmail(fromaddr, toaddrs, msg)
+        server.quit()
+        # SELECT * FROM `Rentals` WHERE `Collection` like '%Monthly%'  and `County` like '%Dublin%'  and `Rent` between 0 and 2200 and `Summary` like '%3%';

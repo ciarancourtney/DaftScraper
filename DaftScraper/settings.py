@@ -6,6 +6,7 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #
 import MySQLdb
+import secrets
 
 LOG_LEVEL = 'DEBUG'
 BOT_NAME = 'DaftScraper'
@@ -13,12 +14,12 @@ USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 
              "(KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36"
 
 # SQL DATABASE SETTING
-SQL_DB = 'DaftDB'
-SQL_TABLE = 'Houses'
-SQL_HOST = '127.0.0.1'
-SQL_PORT = 8889
-SQL_USER = 'root'
-SQL_PASSWD = 'root'
+SQL_DB = 'ashaman'
+SQL_TABLE = 'Rentals'
+SQL_HOST = 'mysql.internal'
+SQL_PORT = 3306
+SQL_USER = 'ashaman'
+SQL_PASSWD = secrets.dbpass
 
 # connect to the MySQL server
 try:

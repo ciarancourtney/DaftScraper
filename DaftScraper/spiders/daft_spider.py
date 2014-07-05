@@ -11,7 +11,6 @@ __author__ = 'danmalone'
 class EtsySpider(CrawlSpider):
     name = "daft"
     # allowed_domains = ["daft.ie"]
-    DEFAULT_CHARSET = 'utf-8'
 
     def __init__(self, category=None, category2=None, *args, **kwargs):
         super(EtsySpider, self).__init__(*args, **kwargs)
@@ -134,8 +133,8 @@ class EtsySpider(CrawlSpider):
     def parse(self, response):
         try:
             request = Request(
-                url="http://www.daft.ie/ajax_endpoint.php?action=map_nearby_properties&type=rental&sw=(50.21403564497616%2C+-10.571344023437527)&ne=(60.479977662240046%2C+-0.947095976562528)&extra_params=%7B%22price%22%3A%5B0%2C50000000%5D%2C%22beds%22%3A%5B0%2C20%5D%7D",
-                method="POST", callback=self.parse_categories)
+                url="http://www.daft.ie/ajax_endpoint.php?action=map_nearby_properties&type=rental&sw=(51.93173528395185%2C+-10.03197265625)&ne=(55.031189853816535%2C+-5.59498046875)&extra_params=%7B%22rent%22%3A%5B0%2C50000000%5D%2C%22beds%22%3A%5B0%2C20%5D%7D"
+                ,method="POST", callback=self.parse_categories)
             # ,headers={'Content-Length':   11151})
             yield request
         except Exception, e:
@@ -147,19 +146,18 @@ class EtsySpider(CrawlSpider):
 
         resultItems = []
         for result in items:
-
             item = DaftscrapApiItem()
-            item['area'] = result['area'].encode('utf-8')
-            item['collection'] = result['collection'].encode('utf-8')
-            item['county'] = result['county'].encode('utf-8')
+            item['area'] = result['area']
+            item['collection'] = result['collection']
+            item['county'] = result['county']
             item['id'] = result['id']
             item['lat'] = result['lat']
             item['long'] = result['long']
-            item['link'] = result['link'].encode('utf-8')
-            item['photo'] = result['photo'].encode('utf-8')
-            item['rent'] = result['rent'].replace(',', '').encode('utf-8')
-            item['street'] = result['street'].encode('utf-8')
-            item['summary'] = result['summary'].encode('utf-8')
+            item['link'] = result['link']
+            item['photo'] = result['photo']
+            item['rent'] = result['rent'].replace(',', '')
+            item['street'] = result['street']
+            item['summary'] = result['summary']
 
             resultItems.append(item)
             yield item

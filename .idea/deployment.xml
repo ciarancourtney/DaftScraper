@@ -5,7 +5,7 @@
       <paths name="redbrick">
         <serverdata>
           <mappings>
-            <mapping deploy="/data-mining" local="$PROJECT_DIR$" web="~ashaman/data-mining" />
+            <mapping deploy="/data-mining" local="$PROJECT_DIR$" web="/data-mining" />
           </mappings>
         </serverdata>
       </paths>

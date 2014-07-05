@@ -1,7 +1,7 @@
 import json
 import os
-from Cherry.Miner.DataMiner import select_by_county, compute_nearest_neighbour
-from DaftScraper.items import DaftscrapApiItem
+from DataMiner import select_by_county, compute_nearest_neighbour
+from items import DaftscrapApiItem
 
 __author__ = 'danmalone'
 import cherrypy
@@ -43,6 +43,7 @@ def rentals(lat =None, long=None, county=None, beds= None):
         return json.dumps('[]')
 
 
+
 @cherrypy.expose
 def reports():
     tmpl = lookup.get_template("reports.html")
@@ -59,6 +60,7 @@ if __name__ == '__main__':
     current_dir = os.path.dirname(os.path.abspath(__file__))
     # Set up site-wide config first so we get a log if errors occur.
     cherrypy.config.update({'environment': 'production',
+			    'log.access_file': 'access.log',
                             'log.error_file': 'site.log',
                             'log.screen': True})
 
@@ -79,6 +81,6 @@ if __name__ == '__main__':
 
     cherrypy.tree.mount(root, '/', config=conf)
     cherrypy.tree.mount(api, '/api')
-
+    cherrypy.config.update({'server.socket_port': 8081, 'server.socket_host' : '0.0.0.0', 'environment': 'production'})
     cherrypy.engine.start()
     cherrypy.engine.block()
