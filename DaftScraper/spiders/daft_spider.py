@@ -43,7 +43,7 @@ class EtsySpider(CrawlSpider):
                 item = DaftscrapedItem()
                 address = site.css(' h2 > a::text')
                 if len(address) > 0:
-                    address = address.extract()[0].replace('\n', '').strip().encode('utf8')
+                    address = address.extract()[0].replace('\n', '').strip().encode('utf-8')
 
                 if '- House to let' in address:
                     item['address'] = address.replace('- House to let', '').strip()
@@ -62,7 +62,7 @@ class EtsySpider(CrawlSpider):
                 if len(address_list) >= 0:
                     for i in range(0, len(address_list)):
                         if i == 5: break
-                        item['address' + `i`] = address_list[i]
+                        item['address' + repr(i)] = address_list[i]
 
                     item['county'] = address_list[len(address_list) - 1]
                     if len(address_list) <= 2:
@@ -117,8 +117,8 @@ class EtsySpider(CrawlSpider):
                 # break
                 yield item
 
-            except Exception, e:
-                print 'Oops! EXCEPTION \n' + response.url + '\n' + e.message
+            except Exception as e:
+                print('Oops! EXCEPTION \n' + response.url + '\n' + str(e))
 
         url = sel.css('li.next_page > a::attr(href)')
         if len(url) > 0:
@@ -137,8 +137,8 @@ class EtsySpider(CrawlSpider):
                 ,method="POST", callback=self.parse_categories)
             # ,headers={'Content-Length':   11151})
             yield request
-        except Exception, e:
-            print e.message
+        except Exception as e:
+            print(str(e))
 
     def parse_categories(self, response):
 

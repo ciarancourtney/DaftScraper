@@ -1,4 +1,3 @@
-import collections
 from math import sqrt
 from DaftScraper.items import DaftscrapApiItem
 from DaftScraper.settings import CONN
@@ -32,8 +31,8 @@ def select_by_county(data, beds):
         cursor.execute("select * From Rentals where County=%s AND Collection=%s and Summary like %s",
                        (data['county'], 'monthly', '%' + beds + '%'), )
 
-    except Exception, e:
-        print e.message
+    except Exception as e:
+        print(str(e))
 
     items = []
     map_to_item(cursor, items)

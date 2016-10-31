@@ -1,0 +1,5 @@
+*.log
+items.json
+.idea/
+venv/
+*.pyc
