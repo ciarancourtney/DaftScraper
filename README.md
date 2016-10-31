@@ -15,3 +15,16 @@ This project contains two modules
 #The Data Miner
   This module is served by a CherryPy python web server, within you will find a web site and a data miner
   The data miner performs some trivial operations upon the data base to allow a user to predict the price of a home given an area and set of facilities.
+
+
+# Installation
+
+If using python 3.3+ on ubuntu, just run:
+
+    $ bin/build.sh
+
+Then execute a crawl using:
+
+    $ venv/bin/scrapy crawl daft
+    
+By default, there should be some results in the 'Rentals' mysql table
